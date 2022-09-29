@@ -160,6 +160,5 @@ class TicTacToe
     {
         int index = choice - 1;
         board[index] = currentPlayer;
-
     }
 }
