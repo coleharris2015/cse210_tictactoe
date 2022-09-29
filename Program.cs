@@ -141,7 +141,8 @@ class TicTacToe
         Console.Write($"{currentPlayer}'s turn to choose a square (1-9): ");
         string? move_string = Console.ReadLine();
 
-        if (move_string is null) {
+        if (move_string is null) 
+        {
             return 0;
         }
 
