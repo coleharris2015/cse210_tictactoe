@@ -1,14 +1,17 @@
-class Board {
+class Board 
+{
 
     List<string> squares = new List<string>();
-    public Board() {
+    public Board() 
+	{
         for (int i = 1; i <= 9; i++)
         {
             squares.Add(i.ToString());
         }
     }
 
-    public void display() {
+    public void display() 
+	{
         // This could be done more elegantly using loops and if statements
         // especially if something besides 3x3 was ever anticipated.
         Console.WriteLine($"{squares[0]}|{squares[1]}|{squares[2]}");
@@ -27,7 +30,8 @@ class Board {
         squares[index] = player;
     }
 
-    public bool hasUnclaimedSquares() {
+    public bool hasUnclaimedSquares() 
+	{
         bool foundDigit = false;
 
         foreach (string value in squares)
